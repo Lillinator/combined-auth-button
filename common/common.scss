@@ -1,5 +1,6 @@
 @use "lib/viewport";
 
+.anon {
 .mobile-auth-button {
   display: none;
 }
@@ -28,4 +29,5 @@
   .mobile-auth-button .d-icon-user {
     display: none;
   }
+}
 }
