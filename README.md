@@ -21,9 +21,11 @@ With component installed and `Hide login button icon` enabled:
 
 <img width="40%" height="40%" alt="8E14BA2B-A2C1-43C0-8554-3EA42EFFE8AA_1_201_a" src="https://github.com/user-attachments/assets/a0815ae9-48f0-4ddc-a955-a75d7795250d" />
 
-With component installed & cusomtized button texts:
+With component installed & changed button texts:
 
 <img width="40%" height="40%" alt="E8826177-5E32-42D5-9402-AE8132F2BE19_1_201_a" src="https://github.com/user-attachments/assets/eda1c378-70cc-4256-b2c2-c8c571ed43da" />
+
+<br />
 
 <img width="40%" height="40%" alt="7A630DCA-2264-4F5E-AAF0-54CAB60CAEA0_1_201_a" src="https://github.com/user-attachments/assets/a80dd2c6-b521-4edb-a1c0-6ad2a70f325b" />
 
