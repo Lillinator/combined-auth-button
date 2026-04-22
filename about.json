@@ -1,0 +1,8 @@
+{
+  "name": "Discourse Mobile Auth Button",
+  "component": true,
+  "authors": "@Lilly",
+  "about_url": "https://github.com/Lillinator/discourse-mobile-auth-button/blob/main/README.md",
+  "license_url": "https://github.com/Lillinator/discourse-mobile-auth-button/blob/main/LICENSE",
+  "theme_version": "1.0.0"
+}
