@@ -18,3 +18,6 @@ With component installed & cusomtized button text:
 
 <img width="40%" height="40%" alt="E8826177-5E32-42D5-9402-AE8132F2BE19_1_201_a" src="https://github.com/user-attachments/assets/eda1c378-70cc-4256-b2c2-c8c571ed43da" />
 
+Settings:
+
+<img width="40%" height="40%" alt="image" src="https://github.com/user-attachments/assets/feb25ad6-4065-4872-b662-ce44bed4574b" />
