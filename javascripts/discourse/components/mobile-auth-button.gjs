@@ -17,7 +17,6 @@ export default class MobileAuthButton extends Component {
     return !this.currentUser && !this.header.headerButtonsHidden.includes("login");
   }
 
-  // Verify if signups are currently allowed on the forum
   get showSignUp() {
     return this.siteSettings.allow_new_registrations && !this.siteSettings.invite_only;
   }
@@ -32,14 +31,14 @@ export default class MobileAuthButton extends Component {
     if (this.showSignUp) {
       options.push({
         id: "signup",
-        labelKey: "mobile_auth_signup", // Uses your new theme key
+        labelKey: "mobile_auth_signup", 
         icon: "user-plus",
       });
     }
 
     options.push({
       id: "login",
-      labelKey: "mobile_auth_login", // Uses your new theme key
+      labelKey: "mobile_auth_login", 
       icon: "user",
     });
 
