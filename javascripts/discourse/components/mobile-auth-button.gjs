@@ -17,7 +17,7 @@ export default class MobileAuthButton extends Component {
     return !this.currentUser && !this.header.headerButtonsHidden.includes("login");
   }
 
-  // Uses the core logic to verify if signups are currently allowed on the forum
+  // Verify if signups are currently allowed on the forum
   get showSignUp() {
     return this.siteSettings.allow_new_registrations && !this.siteSettings.invite_only;
   }
@@ -29,7 +29,7 @@ export default class MobileAuthButton extends Component {
   get authOptions() {
     const options = [];
 
-    // Push standard Sign Up button (if allowed)
+    // Show Sign Up button (if allowed)
     if (this.showSignUp) {
       options.push({
         id: "signup",
@@ -38,7 +38,7 @@ export default class MobileAuthButton extends Component {
       });
     }
 
-    // Push standard Log In button
+    // Show Log In button
     options.push({
       id: "login",
       labelKey: "log_in", // Discourse core translation key
@@ -64,7 +64,6 @@ export default class MobileAuthButton extends Component {
       }
     }
     
-    // Close the dropdown after making a selection
     this.dMenu?.close();
   }
 
