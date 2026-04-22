@@ -1,6 +1,5 @@
 @use "lib/viewport";
 
-// Desktop: Hide our custom button
 .mobile-auth-button {
   display: none;
 }
@@ -23,7 +22,7 @@
     
     .d-header .contents > *:has(.mobile-auth-button) {
       margin-left: auto;
-      margin-right: 0.5em; 
+      margin-right: 0; 
     }
     
     .d-header .panel {
