@@ -1,4 +1,6 @@
 en:
   theme_metadata:
     description: "Mobile Sign Up & Log In Button"
+    settings:
+      hide_login_button_icon: "Hide the Sign Up / Log In button icon"
   mobile_auth_button: "Sign Up / Log In"
