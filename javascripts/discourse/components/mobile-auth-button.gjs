@@ -2,37 +2,93 @@ import Component from "@glimmer/component";
 import { action } from "@ember/object";
 import { service } from "@ember/service";
 import { getOwner } from "@ember/application";
+import { fn } from "@ember/helper";
 import DButton from "discourse/components/d-button";
+import DropdownMenu from "discourse/components/dropdown-menu";
+import DMenu from "discourse/float-kit/components/d-menu";
 import I18n from "discourse-i18n";
 
 export default class MobileAuthButton extends Component {
   @service currentUser;
   @service header;
+  @service siteSettings;
 
   get shouldShow() {
     return !this.currentUser && !this.header.headerButtonsHidden.includes("login");
+  }
+
+  get showSignUp() {
+    return this.siteSettings.allow_new_registrations && !this.siteSettings.invite_only;
   }
 
   get mobileAuthButtonLabel() {
     return I18n.t(themePrefix("mobile_auth_button"));
   }
 
+  get authOptions() {
+    const options = [];
+
+    if (this.showSignUp) {
+      options.push({
+        id: "signup",
+        labelKey: "mobile_auth_signup",
+        icon: "user-plus",
+      });
+    }
+
+    options.push({
+      id: "login",
+      labelKey: "mobile_auth_login",
+      icon: "user",
+    });
+
+    return options;
+  }
+
   @action
-  showLogin() {
+  onRegisterApi(api) {
+    this.dMenu = api;
+  }
+
+  @action
+  onSelect(optionId) {
     const appRoute = getOwner(this).lookup("route:application");
     if (appRoute) {
-      appRoute.send("showLogin");
+      if (optionId === "login") {
+        appRoute.send("showLogin");
+      } else if (optionId === "signup") {
+        appRoute.send("showCreateAccount");
+      }
     }
+    
+    this.dMenu?.close();
   }
 
   <template>
     {{#if this.shouldShow}}
-      <DButton
-        class="btn-primary btn-small mobile-auth-button"
-        @action={{this.showLogin}}
-        @translatedLabel={{this.mobileAuthButtonLabel}}
+      <DMenu
+        @modalForMobile={{true}}
+        @identifier="mobile-auth-dropdown"
+        @onRegisterApi={{this.onRegisterApi}}
         @icon="user"
-      />
+        @label={{this.mobileAuthButtonLabel}}
+        class="btn-primary btn-small mobile-auth-button"
+      >
+        <:content>
+          <DropdownMenu as |dropdown|>
+            {{#each this.authOptions as |option|}}
+              <dropdown.item>
+                <DButton
+                  @label={{themePrefix option.labelKey}}
+                  @icon={{option.icon}}
+                  class="btn-transparent"
+                  @action={{fn this.onSelect option.id}}
+                />
+              </dropdown.item>
+            {{/each}}
+          </DropdownMenu>
+        </:content>
+      </DMenu>
     {{/if}}
   </template>
 }
