@@ -32,9 +32,9 @@ With component installed & cusomtized button text:
 
 ***
 
-**Discourse Meta Topic**: https://meta.discourse.org/#
+**Discourse Meta Topic**: https://meta.discourse.org/t/discourse-mobile-auth-button/401215/1
 
-**Support**: For issues or feature requests, please post in the [Meta topic](https://meta.discourse.org/#) or start a PR on this repo.  
+**Support**: For issues or feature requests, please post in the [Meta topic](https://meta.discourse.org/t/discourse-mobile-auth-button/401215/1) or start a PR on this repo.  
 
 **To hire me or buy me coffee**: visit me here: [Lilly@Discourse Meta](https://meta.discourse.org/u/Lilly/summary).
 
