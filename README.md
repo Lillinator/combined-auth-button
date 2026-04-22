@@ -1,6 +1,6 @@
 ## Discourse Mobile Auth Button
 
-### :woman_technologist:t2: Overview
+### :woman_technologist: Overview
 In the default mobile view, the `Sign Up` button is hidden and the existing `Log In` button can be confusing for new visitors to Discourse forums (anonymous view). 
 
 <img width="40%" height="40%" alt="47098157-549C-4084-92D0-6C1A54A3CC09_1_201_a" src="https://github.com/user-attachments/assets/29dfa542-9788-4a9a-83ec-5dba38aa0757" />
