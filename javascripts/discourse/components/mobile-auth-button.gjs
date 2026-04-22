@@ -29,19 +29,17 @@ export default class MobileAuthButton extends Component {
   get authOptions() {
     const options = [];
 
-    // Show Sign Up button (if allowed)
     if (this.showSignUp) {
       options.push({
         id: "signup",
-        labelKey: "sign_up", // Discourse core translation key
+        labelKey: "mobile_auth_signup", // Uses your new theme key
         icon: "user-plus",
       });
     }
 
-    // Show Log In button
     options.push({
       id: "login",
-      labelKey: "log_in", // Discourse core translation key
+      labelKey: "mobile_auth_login", // Uses your new theme key
       icon: "user",
     });
 
@@ -82,7 +80,7 @@ export default class MobileAuthButton extends Component {
             {{#each this.authOptions as |option|}}
               <dropdown.item>
                 <DButton
-                  @label={{option.labelKey}}
+                  @label={{themePrefix option.labelKey}} {{! Added themePrefix here }}
                   @icon={{option.icon}}
                   class="btn-transparent"
                   @action={{fn this.onSelect option.id}}
@@ -94,4 +92,5 @@ export default class MobileAuthButton extends Component {
       </DMenu>
     {{/if}}
   </template>
+}
 }
