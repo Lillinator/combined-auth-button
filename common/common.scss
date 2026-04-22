@@ -4,28 +4,30 @@
   display: none;
 }
 
-@include viewport.until(md) {
+@if $hide_login_button_icon == "true" {
+  .mobile-auth-button .d-icon-user {
+    display: none;
+  }
+}
 
+@include viewport.until(md) {
   .auth-buttons {
     display: none !important;
   }
 
-  .mobile-auth-button {
-    display: inline-flex; 
-  }
-  
-  .d-header .contents > *:has(.mobile-auth-button) {
-    margin-left: auto;
-    margin-right: 0; 
-  }
-  
-  .d-header .panel {
-    margin-left: 0;
-  }
-}
-
-@if $hide_login_button_icon == "true" {
-  .mobile-auth-button .d-icon-user {
-    display: none;
+  .anon {
+    .mobile-auth-button {
+      display: inline-flex; 
+      margin-right: 0; 
+    }
+    
+    .d-header .contents > *:has(.mobile-auth-button) {
+      margin-left: auto;
+      //margin-right: 0; 
+    }
+    
+    .d-header .panel {
+      margin-left: 0;
+    }
   }
 }
