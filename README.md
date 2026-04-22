@@ -1,6 +1,6 @@
 ## Discourse Mobile Auth Button
 This Discourse theme component replaces the existing `Log In` button with a combined `Sign Up / Log In` button in mobile view so it is less confusing for new users. 
-<br/>Admins can also specify their own custom button text.
+Admins can also specify their own custom button text.
 
 Default without component: 
 
