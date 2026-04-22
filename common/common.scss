@@ -1,0 +1,25 @@
+@use "lib/viewport";
+
+.mobile-auth-button {
+  display: none;
+}
+
+@include viewport.until(md) {
+
+  .auth-buttons {
+    display: none !important;
+  }
+
+  .mobile-auth-button {
+    display: inline-flex; 
+  }
+  
+  .d-header .contents > *:has(.mobile-auth-button) {
+    margin-left: auto;
+    margin-right: 0.5em; 
+  }
+  
+  .d-header .panel {
+    margin-left: 0;
+  }
+}
