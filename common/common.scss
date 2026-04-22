@@ -18,6 +18,7 @@
   .anon {
     .mobile-auth-button {
       display: inline-flex; 
+      margin-right: -4px; 
     }
     
     .d-header .contents > *:has(.mobile-auth-button) {
