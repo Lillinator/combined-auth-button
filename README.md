@@ -32,6 +32,9 @@ With component installed & cusomtized button text:
 
 ***
 
-### :bulb: Notes
+**Discourse Meta Topic**: https://meta.discourse.org/#
 
-This component is compatible with the [Left side hamburger menu on mobile](https://meta.discourse.org/t/left-side-hamburger-menu-on-mobile/164513).
+**Support**: For issues or feature requests, please post in the [Meta topic](https://meta.discourse.org/#) or start a PR on this repo.  
+
+**To hire me or buy me coffee**: visit me here: [Lilly@Discourse Meta](https://meta.discourse.org/u/Lilly/summary).
+
