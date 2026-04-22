@@ -5,9 +5,14 @@ In the default mobile view, the `Sign Up` button is hidden and the existing `Log
 
 <img width="40%" height="40%" alt="47098157-549C-4084-92D0-6C1A54A3CC09_1_201_a" src="https://github.com/user-attachments/assets/29dfa542-9788-4a9a-83ec-5dba38aa0757" />
 
-This simple Discourse theme component replaces the existing `Log In` button with a combined button with clearer labeling - the default is `Sign Up / Log In`
+This simple Discourse theme component replaces the existing `Log In` button with a combined button with clearer labeling - the default is `Sign Up / Log In`. When tapped, it opens a mobile modal with links to the sign up or log in pages.
 
 <img width="40%" height="40%" alt="DF348A51-5F80-4EC6-9FDB-E522E70F7845_1_201_a" src="https://github.com/user-attachments/assets/33715338-5d8f-4f55-ad8b-7ad5d7d2bc97" />
+
+<br/>
+
+<img width="40%" height="40%" alt="7EE2D070-78B8-438D-B857-E2228516AC7E_1_201_a" src="https://github.com/user-attachments/assets/7bebd6a0-7039-4688-9e4b-73a8197b29f2" />
+
 
 
 ### :camera_flash: More screenshots
