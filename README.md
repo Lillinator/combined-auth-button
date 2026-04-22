@@ -27,7 +27,7 @@ With component installed & changed button texts:
 
 <br />
 
-<img width="40%" height="40%" alt="7A630DCA-2264-4F5E-AAF0-54CAB60CAEA0_1_201_a" src="https://github.com/user-attachments/assets/a80dd2c6-b521-4edb-a1c0-6ad2a70f325b" />
+<img width="60%" height="60%" alt="7A630DCA-2264-4F5E-AAF0-54CAB60CAEA0_1_201_a" src="https://github.com/user-attachments/assets/a80dd2c6-b521-4edb-a1c0-6ad2a70f325b" />
 
 
 ### :gear: Settings
