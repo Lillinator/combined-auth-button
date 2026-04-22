@@ -13,6 +13,7 @@ Mobile sign up or log in modal:
 
 <img width="40%" height="40%" alt="7EE2D070-78B8-438D-B857-E2228516AC7E_1_201_a" src="https://github.com/user-attachments/assets/7bebd6a0-7039-4688-9e4b-73a8197b29f2" />
 
+There is an admin setting that gives the option to hide the combined button icon for more header space, as well as text string fields to customize all the button labels.
 
 ### :camera_flash: More screenshots
 
@@ -27,8 +28,6 @@ With component installed & changed button texts:
 <br />
 
 <img width="40%" height="40%" alt="7A630DCA-2264-4F5E-AAF0-54CAB60CAEA0_1_201_a" src="https://github.com/user-attachments/assets/a80dd2c6-b521-4edb-a1c0-6ad2a70f325b" />
-
-There is an admin setting that gives the option to hide the combined button icon for more header space, as well as text string fields to customize all the button labels.
 
 
 ### :gear: Settings & theme translations
