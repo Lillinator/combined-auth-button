@@ -23,3 +23,9 @@
     margin-left: 0;
   }
 }
+
+@if $hide_login_button_icon == "true" {
+  .mobile-auth-button .d-icon-user {
+    display: none;
+  }
+}
