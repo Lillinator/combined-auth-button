@@ -31,14 +31,14 @@ export default class MobileAuthButton extends Component {
     if (this.showSignUp) {
       options.push({
         id: "signup",
-        labelKey: "mobile_auth_signup", 
+        labelKey: "mobile_auth_signup",
         icon: "user-plus",
       });
     }
 
     options.push({
       id: "login",
-      labelKey: "mobile_auth_login", 
+      labelKey: "mobile_auth_login",
       icon: "user",
     });
 
@@ -79,7 +79,7 @@ export default class MobileAuthButton extends Component {
             {{#each this.authOptions as |option|}}
               <dropdown.item>
                 <DButton
-                  @label={{themePrefix option.labelKey}} {{! Added themePrefix here }}
+                  @label={{themePrefix option.labelKey}}
                   @icon={{option.icon}}
                   class="btn-transparent"
                   @action={{fn this.onSelect option.id}}
@@ -91,5 +91,4 @@ export default class MobileAuthButton extends Component {
       </DMenu>
     {{/if}}
   </template>
-}
 }
