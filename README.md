@@ -7,7 +7,7 @@ Default mobile view without component:
 
 <img width="40%" height="40%" alt="47098157-549C-4084-92D0-6C1A54A3CC09_1_201_a" src="https://github.com/user-attachments/assets/29dfa542-9788-4a9a-83ec-5dba38aa0757" />
 
-This simple Discourse theme component replaces the existing `Log In` button with a combined button with clearer labeling - the default is `Sign Up / Log In`. When clicked or tapped, it opens a dropdown menu or mobile modal with links to the sign up or log in pages.
+This simple Discourse theme component replaces the existing `Log In` button with a combined button with clearer labeling - the default is `Sign Up / Log In`. When clicked or tapped, it opens a dropdown menu or mobile modal with links to the sign up or log in pages. There is an admin setting that gives the option to hide the combined button icon for more header space, as well as settings for changing the icons and text string fields to customize all the button labels.
 
 Mobile:
 
@@ -21,7 +21,6 @@ Desktop button with dropdown menu:
 
 <img alt="image" src="https://github.com/user-attachments/assets/e6b894bf-32a3-4080-84e2-d286d8d0d73f" />
 
-There is an admin setting that gives the option to hide the combined button icon for more header space, as well as text string fields to customize all the button labels.
 
 ### :camera_flash: More screenshots
 
@@ -29,15 +28,15 @@ With component installed and `Hide mobile login button icon` enabled:
 
 <img width="40%" height="40%" alt="8E14BA2B-A2C1-43C0-8554-3EA42EFFE8AA_1_201_a" src="https://github.com/user-attachments/assets/a0815ae9-48f0-4ddc-a955-a75d7795250d" />
 
-With component installed & changed button texts:
+With component installed & changed button texts and icons:
 
 Mobile:
 
-<img width="40%" height="40%" alt="E8826177-5E32-42D5-9402-AE8132F2BE19_1_201_a" src="https://github.com/user-attachments/assets/eda1c378-70cc-4256-b2c2-c8c571ed43da" />
+<img width="40%" height="40%" alt="E28D57E3-B771-4824-9D35-F77BAB593AAE_1_201_a" src="https://github.com/user-attachments/assets/bc8299bc-abf8-4de5-943d-6da42f67bb70" />
 
 <br />
 
-<img width="40%" height="40%" alt="7A630DCA-2264-4F5E-AAF0-54CAB60CAEA0_1_201_a" src="https://github.com/user-attachments/assets/a80dd2c6-b521-4edb-a1c0-6ad2a70f325b" />
+<img width="40%" height="40%" alt="7E0555A7-9DE3-4248-8807-355BB6B67ADB_1_201_a" src="https://github.com/user-attachments/assets/bcfcdc2b-add6-47b8-83a0-fe6315dba7fc" />
 
 Desktop:
 
