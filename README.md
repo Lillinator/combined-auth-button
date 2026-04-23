@@ -25,6 +25,21 @@ Desktop button and dropdown menu with component default settings:
 There are admin settings that allow for enabling on desktop, hiding the combined button icon for more header space in mobile view, as well as for changing all the button icons and labels.
 
 
+### :gear: Settings & theme translations
+
+|Setting | Description|
+|--- | ---|
+|`enable_on_desktop` | Enable the combined auth button on all viewports sizes|
+|`hide_mobile_combined_button_icon` | hides the combined auth button icon in mobile view to save header space|
+|`combined_button_icon` | SVG icon for the main dropdown trigger button |
+|`login_button_icon` | SVG icon for Log In button (& combined auth button if 'Hide mobile login button icon` is disabled)|
+|`signup_button_icon` | SVG icon for the Sign Up button|
+|`button_labels.auth` | combined button text string for theme translations|
+|`button_labels.log_in` | log in button text string for theme translations|
+|`button_labels.sign_up` | sign up button text string for theme translations|
+
+
+
 ### :camera_flash: More screenshots
 
 With component installed and `Hide mobile login button icon` enabled:
@@ -44,20 +59,6 @@ Mobile:
 Desktop:
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/34732de2-0611-42cb-a0c2-4a2bc67b15d8" />
-
-
-### :gear: Settings & theme translations
-
-|Setting | Description|
-|--- | ---|
-|`enable_on_desktop` | Enable the combined auth button on all viewports sizes|
-|`hide_mobile_combined_button_icon` | hides the combined auth button icon in mobile view to save header space|
-|`combined_button_icon` | SVG icon for the main dropdown trigger button |
-|`login_button_icon` | SVG icon for Log In button (& combined auth button if 'Hide mobile login button icon` is disabled)|
-|`signup_button_icon` | SVG icon for the Sign Up button|
-|`button_labels.auth` | combined button text string for theme translations|
-|`button_labels.log_in` | log in button text string for theme translations|
-|`button_labels.sign_up` | sign up button text string for theme translations|
 
 
 ***
