@@ -13,6 +13,11 @@ export default class CombinedAuthButton extends Component {
   @service header;
   @service siteSettings;
 
+  // New getter for the main trigger button
+  get combinedIcon() {
+    return settings.combined_button_icon;
+  }
+
   get loginIcon() {
     return settings.login_button_icon;
   }
@@ -78,7 +83,7 @@ export default class CombinedAuthButton extends Component {
         @modalForMobile={{true}}
         @identifier="combined-auth-dropdown"
         @onRegisterApi={{this.onRegisterApi}}
-        @icon={{this.loginIcon}}
+        @icon={{this.combinedIcon}} {{! Updated this line }}
         @label={{this.mobileAuthButtonLabel}}
         class="btn-primary btn-small combined-auth-button"
       >
