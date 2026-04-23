@@ -8,7 +8,7 @@ import DropdownMenu from "discourse/components/dropdown-menu";
 import DMenu from "discourse/float-kit/components/d-menu";
 import I18n from "discourse-i18n";
 
-export default class MobileAuthButton extends Component {
+export default class CombinedAuthButton extends Component {
   @service currentUser;
   @service header;
   @service siteSettings;
