@@ -9,15 +9,13 @@ Default mobile view without component:
 
 This simple Discourse theme component replaces the existing `Log In` button with a combined button with clearer labeling - the default is `Sign Up / Log In`. When clicked or tapped, it opens a dropdown menu or mobile modal with links to the sign up or log in pages. There is an admin setting that gives the option to hide the combined button icon for more header space, as well as settings for changing the icons and text string fields to customize all the button labels.
 
-Mobile:
+Mobile button and modal with component default settings:
 
 <img width="40%" height="40%" alt="DF348A51-5F80-4EC6-9FDB-E522E70F7845_1_201_a" src="https://github.com/user-attachments/assets/33715338-5d8f-4f55-ad8b-7ad5d7d2bc97" />
 
-Mobile sign up or log in modal:
-
 <img width="40%" height="40%" alt="7EE2D070-78B8-438D-B857-E2228516AC7E_1_201_a" src="https://github.com/user-attachments/assets/7bebd6a0-7039-4688-9e4b-73a8197b29f2" />
 
-Desktop button with dropdown menu:
+Desktop button and dropdown menu with component default settings:
 
 <img alt="image" src="https://github.com/user-attachments/assets/e6b894bf-32a3-4080-84e2-d286d8d0d73f" />
 
