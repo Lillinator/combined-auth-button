@@ -1,13 +1,15 @@
 ## Discourse Combined Auth Button
 
 ### :woman_technologist: Overview
-This theme component combines the sign up and login buttons into one button with drop down options, for a cleaner interface and improved user experience.  In particular, the default Discourse mobile forum view hides the Sign Up button and just shows the existing Log In button; this can be confusing and non-intuitive for new visitors to Discourse forums (anonymous view). Moreover, the default mobile log in button links to the log in page that in turn, has a link to the sign up page; this creates unnecessary friction for new users on mobile.  
+This theme component combines the sign up and login buttons into one button with drop down options, for a cleaner header space and improved user experience (especially for mobile users).
+
+In particular, the default Discourse mobile forum view hides the Sign Up button and just shows the existing Log In button; this can be confusing and non-intuitive for new visitors to Discourse forums (anonymous view). Moreover, the default mobile view log in button links to the log in page that in turn, has a link to the sign up page; this creates unnecessary friction for new users on mobile devices.
 
 Default mobile view without component:
 
 <img width="40%" height="40%" alt="47098157-549C-4084-92D0-6C1A54A3CC09_1_201_a" src="https://github.com/user-attachments/assets/29dfa542-9788-4a9a-83ec-5dba38aa0757" />
 
-This simple Discourse theme component replaces the existing `Log In` button with a combined button with clearer labeling - the default is `Sign Up / Log In`. When clicked or tapped, it opens a dropdown menu or mobile modal with links to the sign up or log in pages. There is an admin setting that gives the option to hide the combined button icon for more header space, as well as settings for changing the icons and text string fields to customize all the button labels.
+This simple Discourse theme component replaces the existing Log In button with a combined button with clearer labeling - the default is Sign Up / Log In. When clicked or tapped, it opens a dropdown menu or mobile modal with links to the respective sign up or log in pages. There is an admin setting that gives the option to hide the combined button icon for more header space, as well as settings for changing all of the icons and text string fields to customize all the button labels.
 
 Mobile button and modal with component default settings:
 
@@ -19,6 +21,7 @@ Desktop button and dropdown menu with component default settings:
 
 <img alt="image" src="https://github.com/user-attachments/assets/e6b894bf-32a3-4080-84e2-d286d8d0d73f" />
 
+There are admin settings that allow the combined button icon for more header space in mobile view, as well as for changing all the button icons. You can also customize all the button labels.
 
 ### :camera_flash: More screenshots
 
@@ -43,19 +46,23 @@ Desktop:
 
 ### :gear: Settings & theme translations
 
-* `enable_on_desktop` - Enable the combined sign up & log in button on all viewports sizes
-* `hide_mobile_login_button_icon` - hides the combined log in button icon in mobile view to save header space
-* `login_button_icon` - SVG icon for Log In button (& combined button if 'Hide mobile login button icon` is disabled)
-* `signup_button_icon` - SVG icon for the Sign Up button
-* `button_labels.auth` - combined button text string for theme translations
-* `button_labels.log_in` - log in button text string for theme translations
-* `button_labels.sign_up=` - sign up button text string for theme translations
+|Setting | Description|
+|--- | ---|
+|`enable_on_desktop` | Enable the combined auth button on all viewports sizes|
+|`hide_mobile_login_button_icon` | hides the combined auth button icon in mobile view to save header space|
+|`combined_button_icon` | SVG icon for the main dropdown trigger button |
+|`login_button_icon` | SVG icon for Log In button (& combined auth button if 'Hide mobile login button icon` is disabled)|
+|`signup_button_icon` | SVG icon for the Sign Up button|
+|`button_labels.auth` | combined button text string for theme translations|
+|`button_labels.log_in` | log in button text string for theme translations|
+|`button_labels.sign_up` | sign up button text string for theme translations|
+
 
 ***
 
-**Discourse Meta Topic**: https://meta.discourse.org/t/discourse-mobile-auth-button/401215/1
+**Discourse Meta Topic**: https://meta.discourse.org/t/-/401215
 
-**Support**: For issues or feature requests, please post in the [Meta topic](https://meta.discourse.org/t/discourse-mobile-auth-button/401215/1) or start a PR on this repo.  
+**Support**: For issues or feature requests, please post in the [Meta topic](https://meta.discourse.org/t/-/401215) or start a PR on this repo.  
 
 **To hire me or buy me coffee**: visit me here: [Lilly@Discourse Meta](https://meta.discourse.org/u/Lilly/summary).
 
