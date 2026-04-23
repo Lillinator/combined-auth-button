@@ -7,7 +7,7 @@ In particular, the default Discourse mobile forum view hides the Sign Up button 
 
 Default mobile view without component:
 
-<img width="40%" height="40%" alt="47098157-549C-4084-92D0-6C1A54A3CC09_1_201_a" src="https://github.com/user-attachments/assets/29dfa542-9788-4a9a-83ec-5dba38aa0757" />
+<img width="400" alt="47098157-549C-4084-92D0-6C1A54A3CC09_1_201_a" src="https://github.com/user-attachments/assets/29dfa542-9788-4a9a-83ec-5dba38aa0757" />
 
 This simple Discourse theme component replaces the existing Log In button with a combined button with clearer labeling - the default is Sign Up / Log In. When clicked or tapped, it opens a dropdown menu or mobile modal with links to the respective sign up or log in pages. There is an admin setting that gives the option to hide the combined button icon for more header space, as well as settings for changing all of the icons and text string fields to customize all the button labels.
 
