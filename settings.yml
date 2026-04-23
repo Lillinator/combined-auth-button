@@ -1,3 +1,15 @@
-hide_login_button_icon:
+hide_moible_login_button_icon:
   type: bool
   default: false
+
+enable_on_desktop:
+  type: bool
+  default: true
+
+login_button_icon:
+  type: string
+  default: user
+
+signup_button_icon:
+  type: string
+  default: user-plus
