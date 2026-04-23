@@ -19,7 +19,7 @@ Mobile button and modal with component default settings:
 
 Desktop button and dropdown menu with component default settings:
 
-<img with="500" alt="image" src="https://github.com/user-attachments/assets/e6b894bf-32a3-4080-84e2-d286d8d0d73f" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/cbb75136-7b6d-48f6-b31b-e9338d606d22" />
 
 There are admin settings that allow the combined button icon for more header space in mobile view, as well as for changing all the button icons. You can also customize all the button labels.
 
