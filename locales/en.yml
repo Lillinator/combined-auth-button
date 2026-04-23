@@ -2,11 +2,12 @@ en:
   theme_metadata:
     description: "Combined Sign Up & Log In Button"
     settings:
+      hide_mobile_combined_button_icon: "Hide the combined button icon for more header space in mobile view"
       enable_on_desktop: "Enable the combined sign up & log in button on all viewports sizes"
-      hide_mobile_login_button_icon: "Hide the combined log in button icon in mobile view to save header space"
-      login_button_icon: "SVG icon for the log in button (& combined button if 'Hide mobile login button icon' is disabled)"
-      signup_button_icon: "SVG icon for the sign up button"
+      combined_button_icon: "SVG icon for the main dropdown trigger button"
+      signup_button_icon: "SVG icon for the sign up button in the dropdown"
+      login_button_icon: "SVG icon for the log in button in the dropdown"
   button_labels:
     auth: "Sign Up / Log In"
-    log_in: "Log In"
     sign_up: "Sign Up"
+    log_in: "Log In"
