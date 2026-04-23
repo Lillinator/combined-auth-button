@@ -31,8 +31,8 @@ There are admin settings that allow for enabling on desktop, hiding the combined
 |--- | ---|
 |`enable_on_desktop` | Enable the combined auth button on all viewports sizes|
 |`hide_mobile_combined_button_icon` | hides the combined auth button icon in mobile view to save header space|
-|`combined_button_icon` | SVG icon for the main dropdown trigger button |
-|`login_button_icon` | SVG icon for Log In button (& combined auth button if 'Hide mobile login button icon` is disabled)|
+|`combined_button_icon` | SVG icon for the combined auth dropdown button |
+|`login_button_icon` | SVG icon for the Log In button |
 |`signup_button_icon` | SVG icon for the Sign Up button|
 |`button_labels.auth` | combined button text string for theme translations|
 |`button_labels.log_in` | log in button text string for theme translations|
