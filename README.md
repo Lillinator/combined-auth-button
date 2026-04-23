@@ -19,7 +19,7 @@ Mobile sign up or log in modal:
 
 Desktop button with dropdown menu:
 
-<img width="75%" height="75%" alt="image" src="https://github.com/user-attachments/assets/e6b894bf-32a3-4080-84e2-d286d8d0d73f" />
+<img alt="image" src="https://github.com/user-attachments/assets/e6b894bf-32a3-4080-84e2-d286d8d0d73f" />
 
 There is an admin setting that gives the option to hide the combined button icon for more header space, as well as text string fields to customize all the button labels.
 
@@ -41,7 +41,7 @@ Mobile:
 
 Desktop:
 
-<img width="75%" height="75%" alt="image" src="https://github.com/user-attachments/assets/fdc17939-1f15-4fb1-acbe-891b67f07675" />
+<img alt="image" src="https://github.com/user-attachments/assets/fdc17939-1f15-4fb1-acbe-891b67f07675" />
 
 
 ### :gear: Settings & theme translations
