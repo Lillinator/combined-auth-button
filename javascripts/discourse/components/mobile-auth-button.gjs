@@ -13,6 +13,14 @@ export default class MobileAuthButton extends Component {
   @service header;
   @service siteSettings;
 
+  get loginIcon() {
+    return settings.login_button_icon;
+  }
+
+  get signupIcon() {
+    return settings.signup_button_icon;
+  }
+
   get shouldShow() {
     return !this.currentUser && !this.header.headerButtonsHidden.includes("login");
   }
@@ -32,14 +40,14 @@ export default class MobileAuthButton extends Component {
       options.push({
         id: "signup",
         labelKey: "mobile_auth_signup",
-        icon: "user-plus",
+        icon: this.signupIcon,
       });
     }
 
     options.push({
       id: "login",
       labelKey: "mobile_auth_login",
-      icon: "user",
+      icon: this.loginIcon,
     });
 
     return options;
@@ -70,7 +78,7 @@ export default class MobileAuthButton extends Component {
         @modalForMobile={{true}}
         @identifier="mobile-auth-dropdown"
         @onRegisterApi={{this.onRegisterApi}}
-        @icon="user"
+        @icon={{this.loginIcon}}
         @label={{this.mobileAuthButtonLabel}}
         class="btn-primary btn-small mobile-auth-button"
       >
