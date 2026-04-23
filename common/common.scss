@@ -1,12 +1,12 @@
 @use "lib/viewport";
 
-.mobile-auth-button {
+.combined-auth-button {
   display: none;
 }
 
 @if $hide_mobile_login_button_icon == "true" {
   @include viewport.until(md) {
-    .mobile-auth-button .d-icon {
+    .combined-auth-button .d-icon {
       display: none;
     }
   }
@@ -19,12 +19,12 @@
     display: none !important;
   }
 
-  .mobile-auth-button {
+  .combined-auth-button {
     display: inline-flex; 
     margin-right: 0; 
   }
   
-  .d-header .contents > *:has(.mobile-auth-button) {
+  .d-header .contents > *:has(.combined-auth-button) {
     margin-left: auto;
   }
   
@@ -42,10 +42,10 @@
     @include viewport.from(md) {
       @include enable-combined-auth;
       
-      .mobile-auth-button {
+      .combined-auth-button {
         margin-right: 0.5em; 
       }
-      .mobile-auth-dropdown-content {
+      .combined-auth-dropdown-content {
         .dropdown-menu {
           min-width: 150px; 
           width: 100%;
