@@ -76,11 +76,11 @@ export default class CombinedAuthButton extends Component {
     {{#if this.shouldShow}}
       <DMenu
         @modalForMobile={{true}}
-        @identifier="mobile-auth-dropdown"
+        @identifier="combined-auth-dropdown"
         @onRegisterApi={{this.onRegisterApi}}
         @icon={{this.loginIcon}}
         @label={{this.mobileAuthButtonLabel}}
-        class="btn-primary btn-small mobile-auth-button"
+        class="btn-primary btn-small combined-auth-button"
       >
         <:content>
           <DropdownMenu as |dropdown|>
