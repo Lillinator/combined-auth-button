@@ -41,7 +41,7 @@ Mobile:
 
 Desktop:
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/839d29ed-76cc-42bc-a0af-a42f5acc899a" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/34732de2-0611-42cb-a0c2-4a2bc67b15d8" />
 
 
 ### :gear: Settings & theme translations
