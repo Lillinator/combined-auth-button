@@ -6,7 +6,7 @@ en:
       enable_on_desktop: "Enable the combined sign up & log in button on all viewports sizes"
       signup_button_icon: "SVG icon for the sign up button"
       login_button_icon: "SVG icon for the log in button"
-  button_labels:
-    auth: "Sign Up / Log In"
-    sign_up: "Sign Up"
-    log_in: "Log In"
+button_labels:
+  auth: "Sign Up / Log In"
+  sign_up: "Sign Up"
+  log_in: "Log In"
