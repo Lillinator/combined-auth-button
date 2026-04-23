@@ -6,6 +6,10 @@ hide_mobile_login_button_icon:
   type: bool
   default: false
 
+combined_button_icon:
+  type: string
+  default: user
+
 login_button_icon:
   type: string
   default: user
