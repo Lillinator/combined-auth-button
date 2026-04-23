@@ -39,14 +39,14 @@ export default class MobileAuthButton extends Component {
     if (this.showSignUp) {
       options.push({
         id: "signup",
-        labelKey: "signup",
+        labelKey: "sign_up",
         icon: this.signupIcon,
       });
     }
 
     options.push({
       id: "login",
-      labelKey: "login",
+      labelKey: "log_in",
       icon: this.loginIcon,
     });
 
