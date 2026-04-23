@@ -4,30 +4,55 @@
   display: none;
 }
 
+// Hide mobile icon via setting. We wrap this in a viewport query 
+// so the icon isn't hidden if $enable_on_desktop is true and they resize to desktop.
 @if $hide_mobile_login_button_icon == "true" {
-  .mobile-auth-button .d-icon-user {
-    display: none;
+  @include viewport.until(md) {
+    .mobile-auth-button .d-icon {
+      display: none;
+    }
   }
 }
 
-@include viewport.until(md) {
-  .auth-buttons {
+// Extract the core layout overrides so we can reuse them dynamically
+@mixin enable-combined-auth {
+  // Ensure the default buttons are hidden
+  .login-button,
+  .sign-up-button,
+  .auth-buttons { 
     display: none !important;
   }
 
-  .anon {
-    .mobile-auth-button {
-      display: inline-flex; 
-      margin-right: 0; 
-    }
-    
-    .d-header .contents > *:has(.mobile-auth-button) {
-      margin-left: auto;
-      //margin-right: 0; 
-    }
-    
-    .d-header .panel {
-      margin-left: 0;
+  .mobile-auth-button {
+    display: inline-flex; 
+    margin-right: 0; 
+  }
+  
+  .d-header .contents > *:has(.mobile-auth-button) {
+    margin-left: auto;
+  }
+  
+  .d-header .panel {
+    margin-left: 0;
+  }
+}
+
+.anon {
+  // Always apply combined layout to mobile viewports
+  @include viewport.until(md) {
+    @include enable-combined-auth;
+  }
+
+  // Apply to desktop conditionally based on your new setting
+  @if $enable_on_desktop == "true" {
+    @include viewport.from(md) {
+      @include enable-combined-auth;
+      
+      // Optional: Add a small margin back to desktop so it isn't squeezed 
+      // tight against the site search button on wide screens
+      .mobile-auth-button {
+        margin-right: 0.5em; 
+      }
     }
   }
 }
