@@ -1,33 +1,56 @@
 @use "lib/viewport";
 
-.mobile-auth-button {
+.combined-auth-button {
   display: none;
 }
 
-@if $hide_login_button_icon == "true" {
-  .mobile-auth-button .d-icon-user {
-    display: none;
+@if $hide_mobile_login_button_icon == "true" {
+  @include viewport.until(md) {
+    .combined-auth-button .d-icon {
+      display: none;
+    }
   }
 }
 
-@include viewport.until(md) {
-  .auth-buttons {
+@mixin enable-combined-auth {
+  .login-button,
+  .sign-up-button,
+  .auth-buttons { 
     display: none !important;
   }
 
-  .anon {
-    .mobile-auth-button {
-      display: inline-flex; 
-      margin-right: 0; 
-    }
-    
-    .d-header .contents > *:has(.mobile-auth-button) {
-      margin-left: auto;
-      //margin-right: 0; 
-    }
-    
-    .d-header .panel {
-      margin-left: 0;
+  .combined-auth-button {
+    display: inline-flex; 
+    margin-right: 0; 
+  }
+  
+  .d-header .contents > *:has(.combined-auth-button) {
+    margin-left: auto;
+  }
+  
+  .d-header .panel {
+    margin-left: 0;
+  }
+}
+
+.anon {
+  @include viewport.until(md) {
+    @include enable-combined-auth;
+  }
+
+  @if $enable_on_desktop == "true" {
+    @include viewport.from(md) {
+      @include enable-combined-auth;
+      
+      .combined-auth-button {
+        margin-right: 0.5em; 
+      }
+      .combined-auth-dropdown-content {
+        .dropdown-menu {
+          min-width: 150px; 
+          width: 100%;
+        }
+      }
     }
   }
 }

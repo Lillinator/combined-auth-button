@@ -8,10 +8,18 @@ import DropdownMenu from "discourse/components/dropdown-menu";
 import DMenu from "discourse/float-kit/components/d-menu";
 import I18n from "discourse-i18n";
 
-export default class MobileAuthButton extends Component {
+export default class CombinedAuthButton extends Component {
   @service currentUser;
   @service header;
   @service siteSettings;
+
+  get loginIcon() {
+    return settings.login_button_icon;
+  }
+
+  get signupIcon() {
+    return settings.signup_button_icon;
+  }
 
   get shouldShow() {
     return !this.currentUser && !this.header.headerButtonsHidden.includes("login");
@@ -22,7 +30,7 @@ export default class MobileAuthButton extends Component {
   }
 
   get mobileAuthButtonLabel() {
-    return I18n.t(themePrefix("mobile_auth_button"));
+    return I18n.t(themePrefix("button_labels.auth"));
   }
 
   get authOptions() {
@@ -31,15 +39,15 @@ export default class MobileAuthButton extends Component {
     if (this.showSignUp) {
       options.push({
         id: "signup",
-        labelKey: "mobile_auth_signup",
-        icon: "user-plus",
+        labelKey: "button_labels.sign_up",
+        icon: this.signupIcon,
       });
     }
 
     options.push({
       id: "login",
-      labelKey: "mobile_auth_login",
-      icon: "user",
+      labelKey: "button_labels.log_in",
+      icon: this.loginIcon,
     });
 
     return options;
@@ -68,11 +76,11 @@ export default class MobileAuthButton extends Component {
     {{#if this.shouldShow}}
       <DMenu
         @modalForMobile={{true}}
-        @identifier="mobile-auth-dropdown"
+        @identifier="combined-auth-dropdown"
         @onRegisterApi={{this.onRegisterApi}}
-        @icon="user"
+        @icon={{this.loginIcon}}
         @label={{this.mobileAuthButtonLabel}}
-        class="btn-primary btn-small mobile-auth-button"
+        class="btn-primary btn-small combined-auth-button"
       >
         <:content>
           <DropdownMenu as |dropdown|>
