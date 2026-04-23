@@ -58,7 +58,7 @@ Mobile:
 
 Desktop:
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/34732de2-0611-42cb-a0c2-4a2bc67b15d8" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/618622f8-e706-46d1-a1bd-3f35de6dfe52" />
 
 
 ***
