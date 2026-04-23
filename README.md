@@ -22,10 +22,10 @@ Desktop button and dropdown menu with component default settings:
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/cbb75136-7b6d-48f6-b31b-e9338d606d22" />
 
+### :gear: Settings & theme translations
+
 There are admin settings that allow for enabling on desktop, hiding the combined button icon for more header space in mobile view, as well as for changing all the button icons and labels.
 
-
-### :gear: Settings & theme translations
 
 |Setting | Description|
 |--- | ---|
