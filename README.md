@@ -17,6 +17,8 @@ Mobile button and modal with component default settings:
 <br/>
 <img width="400" alt="7EE2D070-78B8-438D-B857-E2228516AC7E_1_201_a" src="https://github.com/user-attachments/assets/7bebd6a0-7039-4688-9e4b-73a8197b29f2" />
 
+<br/>
+
 Desktop button and dropdown menu with component default settings:
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/cbb75136-7b6d-48f6-b31b-e9338d606d22" />
