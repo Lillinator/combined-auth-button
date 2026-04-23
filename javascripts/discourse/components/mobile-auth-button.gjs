@@ -30,7 +30,7 @@ export default class MobileAuthButton extends Component {
   }
 
   get mobileAuthButtonLabel() {
-    return I18n.t(themePrefix("auth"));
+    return I18n.t(themePrefix("button_labels.auth"));
   }
 
   get authOptions() {
@@ -39,14 +39,14 @@ export default class MobileAuthButton extends Component {
     if (this.showSignUp) {
       options.push({
         id: "signup",
-        labelKey: "sign_up",
+        labelKey: "button_labels.sign_up",
         icon: this.signupIcon,
       });
     }
 
     options.push({
       id: "login",
-      labelKey: "log_in",
+      labelKey: "button_labels.log_in",
       icon: this.loginIcon,
     });
 
