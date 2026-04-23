@@ -13,7 +13,6 @@ export default class CombinedAuthButton extends Component {
   @service header;
   @service siteSettings;
 
-  // New getter for the main trigger button
   get combinedIcon() {
     return settings.combined_button_icon;
   }
