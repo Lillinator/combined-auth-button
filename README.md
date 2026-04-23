@@ -21,7 +21,7 @@ Desktop button and dropdown menu with component default settings:
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/cbb75136-7b6d-48f6-b31b-e9338d606d22" />
 
-There are admin settings that allow the combined button icon for more header space in mobile view, as well as for changing all the button icons. You can also customize all the button labels.
+There are admin settings that allow hiding the combined button icon for more header space in mobile view, as well as for changing all the button icons. You can also customize all the button labels.
 
 ### :camera_flash: More screenshots
 
@@ -49,7 +49,7 @@ Desktop:
 |Setting | Description|
 |--- | ---|
 |`enable_on_desktop` | Enable the combined auth button on all viewports sizes|
-|`hide_mobile_login_button_icon` | hides the combined auth button icon in mobile view to save header space|
+|`hide_mobile_combined_button_icon` | hides the combined auth button icon in mobile view to save header space|
 |`combined_button_icon` | SVG icon for the main dropdown trigger button |
 |`login_button_icon` | SVG icon for Log In button (& combined auth button if 'Hide mobile login button icon` is disabled)|
 |`signup_button_icon` | SVG icon for the Sign Up button|
