@@ -4,7 +4,7 @@ hide_mobile_login_button_icon:
 
 enable_on_desktop:
   type: bool
-  default: true
+  default: false
 
 login_button_icon:
   type: string
