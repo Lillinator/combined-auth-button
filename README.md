@@ -9,8 +9,7 @@ Default mobile view without component:
 
 <img width="400" alt="47098157-549C-4084-92D0-6C1A54A3CC09_1_201_a" src="https://github.com/user-attachments/assets/29dfa542-9788-4a9a-83ec-5dba38aa0757" />
 
-This simple Discourse theme component replaces the existing Log In button with a combined button with clearer labeling - the default is Sign Up / Log In. When clicked or tapped, it opens a dropdown menu or mobile modal with links to the respective sign up or log in pages. There is an admin setting that gives the option to hide the combined button icon for more header space, as well as settings for changing all of the icons and text string fields to customize all the button labels.
-
+This simple Discourse theme component replaces the existing Log In button with a combined button with clearer labeling - the default is Sign Up / Log In. When clicked or tapped, it opens a dropdown menu or mobile modal with links to the respective sign up or log in pages. 
 Mobile button and modal with component default settings:
 
 <img width="400" alt="DF348A51-5F80-4EC6-9FDB-E522E70F7845_1_201_a" src="https://github.com/user-attachments/assets/33715338-5d8f-4f55-ad8b-7ad5d7d2bc97" />
@@ -23,7 +22,8 @@ Desktop button and dropdown menu with component default settings:
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/cbb75136-7b6d-48f6-b31b-e9338d606d22" />
 
-There are admin settings that allow hiding the combined button icon for more header space in mobile view, as well as for changing all the button icons. You can also customize all the button labels.
+There are admin settings that allow for enabling on desktop, hiding the combined button icon for more header space in mobile view, as well as for changing all the button icons and labels.
+
 
 ### :camera_flash: More screenshots
 
