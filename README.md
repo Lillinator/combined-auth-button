@@ -19,7 +19,7 @@ Mobile button and modal with component default settings:
 
 Desktop button and dropdown menu with component default settings:
 
-<img alt="image" src="https://github.com/user-attachments/assets/e6b894bf-32a3-4080-84e2-d286d8d0d73f" />
+<img with="500" alt="image" src="https://github.com/user-attachments/assets/e6b894bf-32a3-4080-84e2-d286d8d0d73f" />
 
 There are admin settings that allow the combined button icon for more header space in mobile view, as well as for changing all the button icons. You can also customize all the button labels.
 
@@ -27,21 +27,21 @@ There are admin settings that allow the combined button icon for more header spa
 
 With component installed and `Hide mobile login button icon` enabled:
 
-<img width="40%" height="40%" alt="8E14BA2B-A2C1-43C0-8554-3EA42EFFE8AA_1_201_a" src="https://github.com/user-attachments/assets/a0815ae9-48f0-4ddc-a955-a75d7795250d" />
+<img width="400" alt="8E14BA2B-A2C1-43C0-8554-3EA42EFFE8AA_1_201_a" src="https://github.com/user-attachments/assets/a0815ae9-48f0-4ddc-a955-a75d7795250d" />
 
 With component installed & changed button texts and icons:
 
 Mobile:
 
-<img width="40%" height="40%" alt="E28D57E3-B771-4824-9D35-F77BAB593AAE_1_201_a" src="https://github.com/user-attachments/assets/bc8299bc-abf8-4de5-943d-6da42f67bb70" />
+<img width="400" alt="E28D57E3-B771-4824-9D35-F77BAB593AAE_1_201_a" src="https://github.com/user-attachments/assets/bc8299bc-abf8-4de5-943d-6da42f67bb70" />
 
 <br />
 
-<img width="40%" height="40%" alt="7E0555A7-9DE3-4248-8807-355BB6B67ADB_1_201_a" src="https://github.com/user-attachments/assets/bcfcdc2b-add6-47b8-83a0-fe6315dba7fc" />
+<img width="400" alt="7E0555A7-9DE3-4248-8807-355BB6B67ADB_1_201_a" src="https://github.com/user-attachments/assets/bcfcdc2b-add6-47b8-83a0-fe6315dba7fc" />
 
 Desktop:
 
-<img width="40%" height="40%" alt="image" src="https://github.com/user-attachments/assets/839d29ed-76cc-42bc-a0af-a42f5acc899a" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/839d29ed-76cc-42bc-a0af-a42f5acc899a" />
 
 
 ### :gear: Settings & theme translations
