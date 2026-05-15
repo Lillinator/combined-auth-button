@@ -13,39 +13,45 @@
 }
 
 @mixin enable-combined-auth {
-  // Hide the default Discourse auth buttons
+  // Hide core buttons completely
   .login-button,
   .sign-up-button,
   .auth-buttons { 
     display: none !important;
   }
 
-  // Force our list item to the left of the other header icons
+  // Safely group your wrapper against the right-side panel
   .combined-auth-button-wrapper {
-    order: -1;
     display: inline-flex;
     align-items: center;
+    margin-left: auto; // Pushes it right
   }
 
   .combined-auth-button {
     display: inline-flex; 
-    margin-right: 0; 
+    margin-right: 0.5em; // Space between your button and search icon
+  }
+  
+  // Strip default panel margin so your button and the panel sit flush
+  .d-header .panel {
+    margin-left: 0;
   }
 }
 
 .anon {
   @include viewport.until(md) {
     @include enable-combined-auth;
+
+    // SCROLL FIX: When the topic title (.extra-info-wrapper) mounts on scroll,
+    // force our custom button to hide, matching default Discourse behavior.
+    .d-header:has(.extra-info-wrapper) .combined-auth-button-wrapper {
+      display: none !important;
+    }
   }
 
   @if $enable_on_desktop == "true" {
     @include viewport.from(md) {
       @include enable-combined-auth;
-      
-      // Apply margin to the wrapper on desktop to space it from the search icon
-      .combined-auth-button-wrapper {
-        margin-right: 0.5em; 
-      }
       
       .combined-auth-dropdown-content {
         .dropdown-menu {
