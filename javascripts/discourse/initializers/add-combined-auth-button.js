@@ -5,9 +5,7 @@ export default {
   name: "add-combined-auth-button",
   initialize() {
     withPluginApi("1.1.0", (api) => {
-      api.renderInOutlet("before-header-panel", CombinedAuthButton, { 
-        attributes: { class: "combined-auth-button-wrapper" } 
-      });
+      api.renderInOutlet("header-buttons", CombinedAuthButton);
     });
   },
 };
