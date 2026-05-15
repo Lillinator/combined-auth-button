@@ -13,26 +13,22 @@
 }
 
 @mixin enable-combined-auth {
-  // Hide core buttons completely
   .login-button,
   .sign-up-button,
   .auth-buttons { 
     display: none !important;
   }
 
-  // Safely group your wrapper against the right-side panel
-  .combined-auth-button-wrapper {
-    display: inline-flex;
-    align-items: center;
-    margin-left: auto; // Pushes it right
-  }
-
   .combined-auth-button {
     display: inline-flex; 
-    margin-right: 0.5em; // Space between your button and search icon
+    margin-right: 0; 
   }
   
-  // Strip default panel margin so your button and the panel sit flush
+  // Targets the generic <div> that Ember wraps your component in
+  .d-header .contents > *:has(.combined-auth-button) {
+    margin-left: auto;
+  }
+  
   .d-header .panel {
     margin-left: 0;
   }
@@ -41,24 +37,35 @@
 .anon {
   @include viewport.until(md) {
     @include enable-combined-auth;
-
-    // SCROLL FIX: When the topic title (.extra-info-wrapper) mounts on scroll,
-    // force our custom button to hide, matching default Discourse behavior.
-    .d-header:has(.extra-info-wrapper) .combined-auth-button-wrapper {
-      display: none !important;
-    }
   }
 
   @if $enable_on_desktop == "true" {
     @include viewport.from(md) {
       @include enable-combined-auth;
       
+      .combined-auth-button {
+        margin-right: 0.5em; 
+      }
       .combined-auth-dropdown-content {
         .dropdown-menu {
           min-width: 150px; 
           width: 100%;
         }
       }
+    }
+  }
+
+  // SCROLL FIX: When the topic title appears...
+  .d-header:has(.extra-info-wrapper) {
+    
+    // 1. Hide the entire Ember wrapper so it takes up zero space
+    .contents > *:has(.combined-auth-button) {
+      display: none !important;
+    }
+    
+    // 2. Restore core margin to the panel so search/hamburger icons stay on the right
+    .panel {
+      margin-left: auto !important;
     }
   }
 }
