@@ -76,34 +76,31 @@ export default class CombinedAuthButton extends Component {
     this.dMenu?.close();
   }
 
-<template>
+  <template>
     {{#if this.shouldShow}}
-      {{!-- Wrap in a list item and assign a wrapper class for reordering --}}
-      <li class="header-dropdown-toggle combined-auth-button-wrapper">
-        <DMenu
-          @modalForMobile={{true}}
-          @identifier="combined-auth-dropdown"
-          @onRegisterApi={{this.onRegisterApi}}
-          @icon={{this.combinedIcon}}
-          @label={{this.mobileAuthButtonLabel}}
-          class="btn-primary btn-small combined-auth-button"
-        >
-          <:content>
-            <DropdownMenu as |dropdown|>
-              {{#each this.authOptions as |option|}}
-                <dropdown.item>
-                  <DButton
-                    @label={{themePrefix option.labelKey}}
-                    @icon={{option.icon}}
-                    class="btn-transparent"
-                    @action={{fn this.onSelect option.id}}
-                  />
-                </dropdown.item>
-              {{/each}}
-            </DropdownMenu>
-          </:content>
-        </DMenu>
-      </li>
+      <DMenu
+        @modalForMobile={{true}}
+        @identifier="combined-auth-dropdown"
+        @onRegisterApi={{this.onRegisterApi}}
+        @icon={{this.combinedIcon}}
+        @label={{this.mobileAuthButtonLabel}}
+        class="btn-primary btn-small combined-auth-button"
+      >
+        <:content>
+          <DropdownMenu as |dropdown|>
+            {{#each this.authOptions as |option|}}
+              <dropdown.item>
+                <DButton
+                  @label={{themePrefix option.labelKey}}
+                  @icon={{option.icon}}
+                  class="btn-transparent"
+                  @action={{fn this.onSelect option.id}}
+                />
+              </dropdown.item>
+            {{/each}}
+          </DropdownMenu>
+        </:content>
+      </DMenu>
     {{/if}}
   </template>
 }
