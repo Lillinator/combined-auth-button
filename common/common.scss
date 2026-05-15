@@ -13,23 +13,23 @@
 }
 
 @mixin enable-combined-auth {
+  // Hide the default Discourse auth buttons
   .login-button,
   .sign-up-button,
   .auth-buttons { 
     display: none !important;
   }
 
+  // Force our list item to the left of the other header icons
+  .combined-auth-button-wrapper {
+    order: -1;
+    display: inline-flex;
+    align-items: center;
+  }
+
   .combined-auth-button {
     display: inline-flex; 
     margin-right: 0; 
-  }
-  
-  .d-header .contents > *:has(.combined-auth-button) {
-    margin-left: auto;
-  }
-  
-  .d-header .panel {
-    margin-left: 0;
   }
 }
 
@@ -42,9 +42,11 @@
     @include viewport.from(md) {
       @include enable-combined-auth;
       
-      .combined-auth-button {
+      // Apply margin to the wrapper on desktop to space it from the search icon
+      .combined-auth-button-wrapper {
         margin-right: 0.5em; 
       }
+      
       .combined-auth-dropdown-content {
         .dropdown-menu {
           min-width: 150px; 
