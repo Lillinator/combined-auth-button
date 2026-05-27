@@ -30,7 +30,7 @@ export default class CombinedAuthButton extends Component {
   }
 
   get showSignUp() {
-    return this.siteSettings.allow_new_registrations && !this.siteSettings.invite_only && !this.siteSettings.login_required;
+    return this.siteSettings.allow_new_registrations && !this.siteSettings.invite_only;
   }
 
   get mobileAuthButtonLabel() {
