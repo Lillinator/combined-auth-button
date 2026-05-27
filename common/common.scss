@@ -13,10 +13,14 @@
 }
 
 @mixin enable-combined-auth {
-  .login-button,
-  .sign-up-button,
-  .auth-buttons { 
-    display: none !important;
+  // SAFETY CHECK: Only hide the default buttons if our combined button is actually present in the DOM
+  // We target the parent .d-header to ensure we catch the default buttons which might live outside our wrapper
+  .d-header:has(.combined-auth-button) {
+    .login-button,
+    .sign-up-button,
+    .auth-buttons { 
+      display: none !important;
+    }
   }
 
   .combined-auth-button {
