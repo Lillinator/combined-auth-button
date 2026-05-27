@@ -13,10 +13,12 @@
 }
 
 @mixin enable-combined-auth {
-  .login-button,
-  .sign-up-button,
-  .auth-buttons { 
-    display: none !important;
+  .d-header:has(.combined-auth-button) {
+    .login-button,
+    .sign-up-button,
+    .auth-buttons { 
+      display: none !important;
+    }
   }
 
   .combined-auth-button {
@@ -24,7 +26,6 @@
     margin-right: 0; 
   }
   
-  // Targets the generic <div> that Ember wraps your component in
   .d-header .contents > *:has(.combined-auth-button) {
     margin-left: auto;
   }
@@ -55,15 +56,12 @@
     }
   }
 
-  // SCROLL FIX: When the topic title appears...
   .d-header:has(.extra-info-wrapper) {
     
-    // 1. Hide the entire Ember wrapper so it takes up zero space
     .contents > *:has(.combined-auth-button) {
       display: none !important;
     }
     
-    // 2. Restore core margin to the panel so search/hamburger icons stay on the right
     .panel {
       margin-left: auto !important;
     }
