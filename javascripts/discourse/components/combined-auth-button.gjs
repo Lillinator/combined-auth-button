@@ -26,7 +26,9 @@ export default class CombinedAuthButton extends Component {
   }
 
   get shouldShow() {
-    return !this.currentUser && !this.header.headerButtonsHidden.includes("login");
+    return !this.currentUser && 
+    !this.header.headerButtonsHidden.includes("login") &&
+    !this.siteSettings.login_required;
   }
 
   get showSignUp() {
